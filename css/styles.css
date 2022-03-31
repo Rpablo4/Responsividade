@@ -1,9 +1,13 @@
+
 .header{
   height: 2.8em;
   background: white;
   display: flex;
   justify-content:flex-end ;
   align-items: center;
+}
+#logoHorizontal{
+  display: none;
 }
 #menuIcon{
 margin-top: 9px;
@@ -25,9 +29,9 @@ margin-top: 4px;
   padding-top: 7em;
   background-image: linear-gradient(to bottom, #3E0250, #1A0020);
 }
-.firstPage img{
-  position: relative;
-  left: 30%;
+#podNikbar{
+  width: 30vw;
+  margin-left: 35vw;
 }
 .firstPage h1{
   font-family: 'Montserrat';
@@ -70,7 +74,7 @@ margin-top: 4px;
   padding-bottom: 5em;
 }
 .oQueE{
-  background-image: linear-gradient(to bottom, #190021, #B309E8);
+  background-color: #1A0020;
 }
 
 body p{
@@ -82,7 +86,7 @@ body p{
 }
 
 .Vantagens{
-  background-image: linear-gradient(to bottom, #B309E8, #B309E8 );
+  background-color: #893AC5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,7 +94,7 @@ body p{
   padding-top: 5em;
 }
 .vantagensText ul{
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: left;
   list-style: url("../assets/checked.png");
 }
@@ -126,7 +130,7 @@ body input{
 .button button{
   border-color: white;
   border-radius: 25px;
-  font-size: 3vw;
+  font-size: 1.2em;;
   width: 100%;
   height: 100%;
   background: rgba(255,255,255,0.1);
@@ -134,8 +138,8 @@ body input{
 }
 .button{
   margin-left: auto;
-  width: 20vw;
-  height: 6vw;
+  width: 5em;
+  height: 2em;
   padding-bottom: 1em;
 }
 #arrowCima{
@@ -144,4 +148,83 @@ body input{
   margin-left: 90%;
   padding-right:20px;
   padding-bottom: 25px;
+}
+
+@media screen and (min-width: 800px) {
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 1em;
+  }
+  .navbar ul li {
+    display: inline;
+    font-size: 1.2em;
+    margin-left: 1em;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  .navbar ul li button {
+    border-color: black;
+    border-radius: 25px;
+    font-size: 1.2em;
+  }
+  #CTAinicial{
+    color: black;
+  }
+  .navbar ul{
+    margin-right: 1em;
+  }
+  .navbar ul li a:hover{
+    color: #A058FF;
+    font-weight: bold;
+  }
+  .navbar ul li button:hover {
+    background-color:  #A058FF;
+  }
+  #menuIcon{
+    display:  none;
+  }
+  #logoMambaSmoke{
+  display: none;
+  }
+  #logoHorizontal{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .Home{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap:2em;
+  }
+  #podNikbar{
+    width: 15em;
+    margin:0;
+    margin-bottom: 8em;
+  }
+  .vantagensText ul{
+    display: inline-flex;
+    justify-content: center;
+    gap: 2em;
+    margin-left: 1em;
+  }
+  .Vantagens{
+    height: 80px;
+    padding: 10px;
+    }
+    .text{
+      display: flex;
+      justify-content: center;
+      margin-left: 15em;
+      margin-right: 10em;
+      gap:3em;
+      padding-bottom: 3em;
+    }
+    #arrowCima{
+      display: none;
+    }
 }
